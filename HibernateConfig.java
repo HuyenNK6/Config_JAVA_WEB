@@ -1,12 +1,10 @@
-import deThiThu.sanPham.model.LoaiSanPham;
-import deThiThu.sanPham.model.SanPham;
+
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
-import phongKham.model.BacSi;
-import phongKham.model.PhongKham;
+
 
 import java.util.Properties;
 
@@ -26,16 +24,16 @@ public class HibernateConfig {
         Properties properties = new Properties();
         properties.put(Environment.DIALECT, "org.hibernate.dialect.SQLServer2016Dialect");
         properties.put(Environment.DRIVER, "com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        properties.put(Environment.URL, "jdbc:sqlserver://localhost:1433;databaseName=PTPM_FINALLY_SOF3012;encrypt=true;trustServerCertificate=true;");
+        properties.put(Environment.URL, "jdbc:sqlserver://localhost:1433;databaseName=xxx;encrypt=true;trustServerCertificate=true;");
         properties.put(Environment.USER, "sa");
-        properties.put(Environment.PASS, "123");
+        properties.put(Environment.PASS, "xxx");
         properties.put(Environment.SHOW_SQL, "true");
         /*
             - Khai báo cho Hibernate biết các Class nào trong Java sẽ được ánh xạ xuống database
-            - Khi ứng dụng chạy, Hibernate sẽ quét các class SanPham và LoaiSanPham (thường có annotation @Entity) để quản lý chúng.
+            - Khi ứng dụng chạy, Hibernate sẽ quét các class xxx1 và xxx2 (thường có annotation @Entity) để quản lý chúng.
         */
-        conf.addAnnotatedClass(SanPham.class);
-        conf.addAnnotatedClass(LoaiSanPham.class);
+        conf.addAnnotatedClass(xxx1.class);
+        conf.addAnnotatedClass(xxx2.class);
 
         conf.setProperties(properties);
         ServiceRegistry registry = new StandardServiceRegistryBuilder()
