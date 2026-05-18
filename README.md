@@ -145,3 +145,7 @@ spring.mvc.view.suffix: .jsp
 ``` 
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 ```
+## AJAX
+``` 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+```
