@@ -140,7 +140,10 @@ spring.mvc.view.suffix: .jsp
 ```
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 ```
-
+## Format - JSTL 
+```
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+```
 ## Form - JSTL 
 ``` 
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
