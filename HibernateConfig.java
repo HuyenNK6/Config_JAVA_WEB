@@ -32,8 +32,8 @@ public class HibernateConfig {
             - Khai báo cho Hibernate biết các Class nào trong Java sẽ được ánh xạ xuống database
             - Khi ứng dụng chạy, Hibernate sẽ quét các class xxx1 và xxx2 (thường có annotation @Entity) để quản lý chúng.
         */
-        conf.addAnnotatedClass(xxx1.class);
-        conf.addAnnotatedClass(xxx2.class);
+        //conf.addAnnotatedClass(xxx1.class);
+        //conf.addAnnotatedClass(xxx2.class);
 
         conf.setProperties(properties);
         ServiceRegistry registry = new StandardServiceRegistryBuilder()
